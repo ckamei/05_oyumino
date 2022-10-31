@@ -1,0 +1,449 @@
+a:hover{
+    opacity: 0.7;
+}
+h3
+,p{
+    color: #583F28;
+}
+@media screen and (min-width:768px) {
+
+body{
+    width: 100%;
+}
+h3{
+    font-size: 22px;
+}
+.navsp{
+    display: none;
+}
+
+/*　　ヘッダーここまで　　*/
+
+/*
+h2{
+    color: #373737;
+    font-size: 1.5em;
+    margin: 40px auto;
+    text-align: center;
+}
+h2:before{
+    content: url(../images/iconmin.png);
+    position: relative;
+    top: 5px;
+    margin-right: 5px;
+} */
+
+
+.bright h3{
+    text-align: left;
+    padding: 0 0 10px 1em;
+    color: #373737;
+}
+
+
+
+
+/*　　メインここから　　*/
+.job h2{
+    margin-top: 80px;
+    margin-bottom: -60px;
+}
+.step h2 > img{
+    max-width: 30%;
+}
+.job{
+    width: 100%;
+    text-align: center;
+    margin: 20px auto 40px auto;
+    display: block;
+}
+.jobsp{
+    display: none;
+}
+.dogimg img{
+    width: 25%;
+    margin: 20px auto;
+
+}
+.job p{
+    text-align: center;
+    display: inline-block;
+    margin: 20px;
+    line-height: 1.5em;
+}
+.jobp{
+    background-color: #f1d4af;
+    text-align: center;
+    margin: 10px auto;
+    display: block;
+    width: 600px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+.jobpleft{
+    width: 100px;
+    display: inline-block;
+    text-align: left;
+}
+.arrow img{
+    width: 2%;
+}
+
+/*　　メインここまで　　*/
+
+
+
+
+.top{
+    position: relative;
+}
+.top img{
+    width: 60px;
+    opacity: 0.7;
+
+}
+.top img:hover{
+    opacity: 1;
+}
+.top{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+footer{
+    background-color: #edae5a;
+    height: 50px;
+    margin-top: 50px;
+}
+
+footer small{
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    padding-top: 18px;
+    color: #fff;
+}
+
+
+
+.underline p{/* 足跡ライン */
+    margin: 0 auto;
+    margin-top: 30px;
+    clear: both;
+    background: url(../images/asiato.png) repeat-x top center;
+    height: 30px;
+}
+
+
+/* micro clearfx */
+.cf:before,
+.cf:after{
+    content: "";
+    display: table;
+}
+.cf:after{ clear: both; }
+.cf{ zoom: 1; } /* For IE 6/7 */
+
+
+
+/* PCstepコーナー */
+.container{
+    width: 1100px;
+    margin: 0 auto;
+}
+.step01_02
+,.step03_04
+,.step05_06{
+    display: flex;
+    justify-content: space-between;
+}
+.step{
+    padding: 0;
+    text-align: center;
+    margin-top: 60px;
+}
+.job h3{
+    width: 310px;
+    display: block;
+    margin: 140px auto 10px;
+}
+.step img{
+    max-width: 100%;
+    height: auto;
+}
+.step_text{
+width: 350px;
+padding: 0 0 0 20px;
+margin-top: 32px;
+text-align: left;
+}
+
+.step.step01{
+    background: url(../images/step1_img.png) no-repeat 135px 30px;
+}
+.step.step02{
+    background: url(../images/step2_img.png) no-repeat 125px 30px;
+}
+.step.step03{
+    background: url(../images/step3_img.png) no-repeat 145px 30px;
+}
+.step.step04{
+    background: url(../images/step4_img.png) no-repeat 116px 30px;
+}
+.step.step05{
+    background: url(../images/step5_img.png) no-repeat 73px 30px;
+}
+.step.step06{
+    background: url(../images/step6_img.png) no-repeat 96px 30px;
+}
+
+}/* PCここまで */
+
+
+
+
+
+
+
+
+
+
+/* レスポンシブここから */
+
+@media screen and (max-width:767px) {
+
+    body{
+        width: 100%;
+    }
+    .navpc{
+        display: none;
+    }
+
+    h1{
+        margin-top: 10px;
+    }
+    header > h1 > a > img{
+        width: 27%;
+        margin: 0 auto;
+        display: block;
+    }
+    header p{
+        font-size: 1.5em;
+        color: #373737;
+        margin: 0 auto;
+        text-align: center;
+    }
+    header a{
+        text-decoration: none;
+        color: #373737;
+    }
+
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* 電話・メールアイコン */
+    header .header_icon{
+        position: absolute;
+        left: 0;
+        top: 10px;
+    }
+    header .header_icon p{
+        float: left;
+        margin: 0 0 0 5px;
+    }
+    header .header_icon p a{
+        display: inline-block;
+    }
+    header .header_icon p a img{
+        width: 40px;
+    }
+
+    nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    nav a{
+        color: #373737;
+        text-decoration: none;
+        text-align: center;
+        padding: 10px 20px;
+        line-height: 1.2em;
+        border-left: none;
+        border-right: none;
+        width: 110px;
+        margin: 10px 0;
+    }
+    nav a:hover{
+        background-image: url(../images/icon.png);
+        background-repeat: no-repeat;
+        background-size: 30px 30px;
+        background-position: 55px 0;
+    }
+    nav a:last-of-type{
+        border-right: none;
+        height: 20px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 110px;
+    }
+    nav li:nth-of-type(2) a{
+        background-image: url(../images/icon.png);
+        background-repeat: no-repeat;
+        background-size: 30px 30px;
+        background-position: 55px 0;
+    }
+
+
+    .underline p{/* 足跡ライン */
+        margin: 0 auto;
+        margin-top: 30px;
+        clear: both;
+        background: url(../images/asiato_sp.png) repeat-x top center;
+        height: 30px;
+    }
+    /*　　ヘッダーここまで　　*/
+
+
+    h1{
+        color: #373737;
+        font-size: 1.2em;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+
+
+
+
+    /*　　メインここから　　*/
+    .job{
+        width: 100%;
+        text-align: center;
+        margin: 20px auto 40px auto;
+        display: block;
+    }
+
+/* stepコーナー */
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.step{
+    padding: 1px;
+    text-align: center;
+    margin-top: 30px;
+}
+section.step{
+    margin-top: 60px;
+}
+h3{
+    display: block;
+    margin: 90px auto 20px;
+}
+.step img{
+    max-width: 80%;
+    height: auto;
+}
+.step_text{
+padding: 0 0 0 20px;
+margin-top: 10px;
+text-align: left;
+line-height: 26px;
+}
+
+.step.step01{
+    background: url(../images/step1_img.png) 0 0 / contain no-repeat;
+}
+.step.step02{
+    background: url(../images/step2_img.png) 0 0 / contain no-repeat;
+}
+.step.step03{
+    background: url(../images/step3_img.png)  0 0 / contain no-repeat;
+}
+.step.step04{
+    background: url(../images/step4_img.png)  0 0 / contain no-repeat;
+}
+.step.step05{
+    background: url(../images/step5_img.png)  0 0 / contain no-repeat;
+}
+.step.step06{
+    background: url(../images/step6_img.png)  0 0 / contain no-repeat;
+}
+
+
+/*　　メインここまで　　*/
+
+
+    .top{
+        position: relative;
+    }
+    .top img{
+        width: 40px;
+        opacity: 0.9;
+    }
+    .top img:hover{
+        opacity: 1;
+    }
+    .top{
+        position: fixed;
+        bottom: 50px;
+        right: 20px;
+    }
+
+    footer{
+        background-color: #edae5a;
+        height: 50px;
+    }
+
+    footer small{
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+        padding-top: 18px;
+        color: #fff;
+    }
+
+
+
+
+
+
+    /* micro clearfx */
+    .cf:before,
+    .cf:after{
+        content: "";
+        display: table;
+    }
+    .cf:after{ clear: both; }
+    .cf{ zoom: 1; } /* For IE 6/7 */
+
+    }
+
+    @media screen and (max-width:574px) {
+
+
+
+        .bright h3{
+            text-align: left;
+            padding: 10px 0 10px 1em;
+            color: #373737;
+        }
+
+
+
+
+    }
+
+
+
+
+/* レスポンシブここまで */

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="robots" content="noindex,nofollow,noarchive">
+        <title>ペットシッターおゆみ野</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/css/drawer.min.css">
+        <link rel="stylesheet" href="css/flexslider.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/job.css">
+        <link rel="stylesheet" href="css/price.css">
+        <link rel="stylesheet" href="css/info.css">
+        <link rel="stylesheet" href="css/profile.css">
+        <link rel="stylesheet" href="css/area.css">
+        <link rel="stylesheet" href="css/contact.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/js/drawer.min.js"></script>
+        <script src="js/jquery.flexslider-min.js"></script>
+        <script>
+            (function ($) {
+
+
+                $(window).load(function () {
+                    $(".flexslider").flexslider({
+                        mode: 'fade',
+                        directionNav: 'false',
+                        slideshowSpeed: 6000
+                    });
+                });
+
+                $(document).ready(function () {
+                    $('.drawer').drawer();
+                });
+
+
+            })(jQuery);
+        </script>
+    </head>
+    <body class="drawer drawer--right">
+        <div id="app">
+            <header class="navpc">
+                <h1><a href="index.html"><img src="images/logo.png"></a></h1>
+                    <nav>
+                        <ul>
+                            <li v-on:click="change('1')"><img src="images/nav_1.png" alt="お世話の内容"></li>
+                            <li v-on:click="change('2')"><img src="images/nav_2.png" alt="料金"></li>
+                            <li v-on:click="change('3')"><img src="images/nav_3.png" alt="ご利用の流れ"></li>
+                            <li v-on:click="change('4')"><img src="images/nav_4.png" alt="プロフィール"></li>
+                            <li v-on:click="change('5')"><img src="images/nav_5.png" alt="営業エリア"></li>
+                            <li><a href="contact.html"><img src="images/nav_6.png" alt="お問い合わせ・ご予約"></a><br></li>
+                        </ul>
+                    </nav>
+                    <div class="header_icon">
+                        <p><a href="tel:0432934898"><img src="images/call_circle.png" alt="電話する"></a></p>
+                        <p><a href="mailto:petsitter.oyumino5601@gmail.com"><img src="images/mail_circle.png" alt="メールする"></a></p>
+                    </div>
+            </header>
+            <header class="navsp" role="banner">
+                <h1><a href="index.html"><img src="images/logo.png"></a></h1>
+                <div class="header_icon">
+                    <p><a href="tel:0432934898"><img src="images/call_circle.png" alt="電話する"></a></p>
+                    <p><a href="mailto:petsitter.oyumino5601@gmail.com"><img src="images/mail_circle.png" alt="メールする"></a></p>
+                </div>
+                <button type="button" class="drawer-toggle drawer-hamburger">
+                    <span class="sr-only">toggle navigation</span>
+                    <span class="drawer-hamburger-icon"></span>
+                </button>
+                <nav class="drawer-nav" role="navigation">
+                    <ul class="drawer-menu">
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="job.html">お世話の内容</a></li>
+                        <li><a href="price.html">　　料金　　</a></li>
+                        <li><a href="info.html">ご利用の流れ</a></li>
+                        <li><a href="profile.html">プロフィール</a></li>
+                        <li><a href="area.html">&nbsp;営業エリア&nbsp;</a></li>
+                        <li><a href="contact.html">お問い合わせ<br>ご予約</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <job v-show="isActive === '1'"></job>
+            <price v-show="isActive === '2'"></price>
+            <info v-show="isActive === '3'"></info>
+            <profile v-show="isActive === '4'"></profile>
+            <area_content v-show="isActive === '5'"></area_content>
+            <!-- <contact_content v-show="isActive === '6'"></contact_content> -->
+        
+        
+            <main v-show="isActive === '0'">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li><img src="images/pc_topimg_1.png"></li>
+                        <li><img src="images/pc_topimg_2.png"></li>
+                        <li><img src="images/pc_topimg_3.png"></li>
+                    </ul>
+                </div>
+                <!--slide end-->
+                <div class="banner1">
+                    <div class="bleft">
+                        <img src="images/maru.png">
+                    </div>
+                    <div class="bright">
+                        <h3><span class="line">安心のペットシッターサービス</span></h3>
+                        <p>
+                            大切なペットのお世話をご自宅でいたします。<br>
+                            いつも通りの環境なので、ペットのストレスを最小限に<br>
+                            抑え、安心で快適なお留守番をサポートいたします。
+                        </p>
+                    </div>
+                </div>
+                <!--banner1 end-->
+                <div class="howto">
+                    <h2>こんな時にご利用ください</h2>
+                    <element id=effect2>
+                        <div class="ibox">
+                            <div class="i1 effect-fade">
+                                <p>
+                                    旅行に行きたいけれど、<br>
+                                    ペットはどこに預けよう？
+                            </p>
+                            </div>
+                            <!--i1 end-->
+                            <div class="i2 effect-fade">
+                                <p>
+                                    出張で１カ月間、<br>
+                                    家を空けるのだけど…
+                                </p>
+                            </div>
+                            <!--i2 end-->
+                            <div class="i3 effect-fade">
+                                <p>
+                                    仕事をしているので、<br>
+                                    昼間散歩して欲しい！
+                                </p>
+                            </div>
+                            <!--i3 end-->
+                            <div class="i4 effect-fade">
+                                <p>
+                                    お盆にお墓参りなどで、<br>
+                                    実家に帰りたい。
+                                </p>
+                            </div>
+                            <!--i4 end-->
+                            <div class="i5 effect-fade">
+                                <p>
+                                    病気・怪我をして、<br>
+                                    入院することに…
+                                </p>
+                            </div>
+                            <!--i5 end-->
+                        </div>
+                        <!--ibox end-->
+                    </element>
+                </div>
+                <!--howto end-->
+                <div class="bflex">
+                    <div class="banner2">
+                        <a href="job.html"><img src="images/banner2.png"></a>
+                    </div>
+                    <!--banner2 end-->
+                    <div class="banner3">
+                        <a href="price.html"><img src="images/banner3.png"></a>
+                    </div>
+                    <!--banner3 end-->
+                </div>
+                <!--bflex end-->
+                <div class="top">
+                <a href="#top"><img src="images/top.png"></a>
+            </div>
+            <!--top end-->
+        
+            </main>
+        </div>
+        <div>
+            
+            <script>
+                $(document).ready(function () {
+                    $(window).scroll(function () {
+                        if ($(this).scrollTop() > 100) { // 100pxスクロールしていたら上に戻るボタンを表示
+                            $(".top").fadeIn();
+                        } else {
+                            $(".top").fadeOut();
+                        }
+                    });
+                    $(".top").click(function () {
+                        $("body,html").animate({ scrollTop: 0 }, 800); // 800msかけて上に戻る
+                    });
+                });
+            </script>
+            <script>
+                    $(function () {
+                        $(window).scroll(function () {
+                            $('.effect-fade').each(function () {
+                                var elemPos = $(this).offset().top;
+                                var scroll = $(window).scrollTop();
+                                var windowHeight = $(window).height();
+                                if (scroll > elemPos - windowHeight) {
+                                    $(this).addClass('effect-scroll');
+                                }
+                            });
+                        });
+                    });
+            </script>
+        </div>
+        <footer>
+            <small>©oyumino petsitter</small>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script src="components/job.js"></script>
+        <script src="components/price.js"></script>
+        <script src="components/info.js"></script>
+        <script src="components/profile.js"></script>
+        <script src="components/area.js"></script>
+        <script src="components/contact.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

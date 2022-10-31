@@ -1,0 +1,670 @@
+@media screen and (min-width:768px) {
+
+    body {
+        width: 100%;
+    }
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    main .flexslider {
+        width: 900px;
+        margin: 0 auto;
+    }
+
+    .navsp {
+        display: none;
+    }
+
+    /*　　ヘッダーここまで　　*/
+
+
+    .howto h2 {
+        color: #373737;
+        font-size: 1.5em;
+        margin: 40px auto;
+        text-align: center;
+    }
+
+    .howto h2:before {
+        content: url(../images/iconmin.png);
+        position: relative;
+        top: 5px;
+        margin-right: 5px;
+    }
+
+
+    .bright h3 {
+        text-align: left;
+        padding: 0 0 10px 1em;
+        color: #373737;
+    }
+
+
+
+
+    /*　　メインここから　　*/
+    .flexslider {
+        width: 100%;
+    }
+
+    .flexslider img {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .banner1 {
+        background-image: url(../images/banner1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        /*background-size: 100% auto;*/
+        height: auto;
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px auto 100px auto;
+        text-align: center;
+    }
+
+    .bleft img {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .bright p {
+        text-align: left;
+        margin: 0 auto;
+        display: inline-block;
+        color: #373737;
+        padding: 0 0 3% 1em;
+        font-size: 1em;
+        line-height: 1.3em;
+    }
+
+    .line {
+        background: linear-gradient(transparent 70%, #ffbde1 70%);
+
+    }
+
+
+    .effect-fade {
+        opacity: 0;
+        transform: translate(0, 200px);
+        transition: all 1000ms;
+    }
+
+    /* 2つ目の要素に200msのdelayをかける */
+    #effect2>div .effect-fade:nth-of-type(2) {
+        -moz-transition-delay: 600ms;
+        -webkit-transition-delay: 600ms;
+        -o-transition-delay: 600ms;
+        -ms-transition-delay: 600ms;
+    }
+
+    /* 3つ目の要素に400msのdelayをかける */
+    #effect2>div .effect-fade:nth-of-type(3) {
+        -moz-transition-delay: 1200ms;
+        -webkit-transition-delay: 1200ms;
+        -o-transition-delay: 1200ms;
+        -ms-transition-delay: 1200ms;
+    }
+
+    /* 4つ目の要素に600msのdelayをかける */
+    #effect2>div .effect-fade:nth-of-type(4) {
+        -moz-transition-delay: 1800ms;
+        -webkit-transition-delay: 1800ms;
+        -o-transition-delay: 1800ms;
+        -ms-transition-delay: 1800ms;
+    }
+
+    /* 5つ目の要素に800msのdelayをかける */
+    #effect2>div .effect-fade:nth-of-type(5) {
+        -moz-transition-delay: 2400ms;
+        -webkit-transition-delay: 2400ms;
+        -o-transition-delay: 2400ms;
+        -ms-transition-delay: 2400ms;
+    }
+
+    .effect-fade.effect-scroll {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+
+    .i1 {
+        background-image: url(../images/illust1.png);
+        background-repeat: no-repeat;
+        background-size: 235px 335px;
+        width: 235px;
+        height: 335px;
+        margin: 0 5px 5px 0;
+    }
+
+    .i2 {
+        background-image: url(../images/illust2.png);
+        background-repeat: no-repeat;
+        background-size: 235px 335px;
+        width: 235px;
+        height: 335px;
+        margin: 0 5px 5px 0;
+    }
+
+    .i3 {
+        background-image: url(../images/illust3.png);
+        background-repeat: no-repeat;
+        background-size: 235px 335px;
+        width: 235px;
+        height: 335px;
+        margin: 0 5px 5px 0;
+    }
+
+    .i4 {
+        background-image: url(../images/illust4.png);
+        background-repeat: no-repeat;
+        background-size: 235px 335px;
+        width: 235px;
+        height: 335px;
+        margin: 0 5px 5px 0;
+    }
+
+    .i5 {
+        background-image: url(../images/illust5.png);
+        background-repeat: no-repeat;
+        background-size: 235px 335px;
+        width: 235px;
+        height: 335px;
+        margin: 0 5px 5px 0;
+    }
+
+    .howto p {
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 40px;
+        width: 170px;
+        font-size: 14px;
+    }
+
+    .howto {
+        width: 100%;
+        min-width: 500px;
+        /*text-align: center;*/
+        margin: 0 auto;
+    }
+
+    .ibox {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .bflex {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 80px 0;
+    }
+
+    .banner2 img,
+    .banner3 img {
+        margin: 10px 20px;
+        transition: .3s ease-out;
+    }
+
+    .banner2 img:hover,
+    .banner3 img:hover {
+        /*opacity: 0.7;*/
+        transition: .3s ease-out;
+        transform: scale(1.02, 1.02);
+    }
+
+
+
+    /*　　メインここまで　　*/
+
+
+
+
+    .top {
+        position: relative;
+    }
+
+    .top img {
+        width: 60px;
+        opacity: 0.7;
+    }
+
+    .top img:hover {
+        opacity: 1;
+    }
+
+    .top {
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+
+    }
+
+    footer {
+        background-color: #edae5a;
+        height: 50px;
+    }
+
+    footer small {
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+        padding-top: 18px;
+        color: #fff;
+    }
+
+
+
+
+
+
+    /* micro clearfx */
+    .cf:before,
+    .cf:after {
+        content: "";
+        display: table;
+    }
+
+    .cf:after {
+        clear: both;
+    }
+
+    .cf {
+        zoom: 1;
+    }
+
+    /* For IE 6/7 */
+
+}
+
+/*@media screen and (min-width:1276px) {
+.ibox{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 800px;
+}
+.howto{
+    text-align: center;
+    margin: 0 auto;
+}
+}*/
+
+
+
+
+
+
+
+/* レスポンシブここから */
+
+@media screen and (max-width:767px) {
+
+    body {
+        width: 100%;
+    }
+
+    main {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .navpc {
+        display: none;
+    }
+
+    .navsp {
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        margin-top: 10px;
+    }
+
+    header>h1>a>img {
+        width: 27%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    header .drawer-nav {
+        z-index: 580;
+    }
+
+    header p {
+        font-size: 1.5em;
+        color: #373737;
+        margin: 0 auto 10px auto;
+        text-align: center;
+    }
+
+    header a {
+        text-decoration: none;
+        color: #373737;
+    }
+
+    header .header_icon p {
+        float: left;
+    /* width: 62px; */
+    margin: 0 auto;
+        margin: 0 0 0 5px;
+    }
+
+    header .header_icon p a {
+        display: inline-block;
+    }
+
+    header .header_icon p a img {
+        width: 40px;
+    }
+
+    nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0 0 10px 0;
+    }
+
+    nav a {
+        color: #373737;
+        text-decoration: none;
+        text-align: center;
+        padding: 10px 20px;
+        line-height: 1.2em;
+        border-left: none;
+        border-right: none;
+        width: 110px;
+        margin: 10px 0;
+    }
+
+    nav a:hover {
+        background-image: url(../images/icon.png);
+        background-repeat: no-repeat;
+        background-size: 30px 30px;
+        background-position: 55px 0;
+    }
+
+    nav a:last-child {
+        border-right: none;
+        height: 20px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 110px;
+    }
+
+    nav li:nth-of-type(1) a {
+        background-image: url(../images/icon.png);
+        background-repeat: no-repeat;
+        background-size: 30px 30px;
+        background-position: 55px 0;
+    }
+
+
+    /*　　ヘッダーここまで　　*/
+
+    .howto h2 {
+        color: #373737;
+        font-size: 1.2em;
+        margin: 10px auto;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .howto h2:before {
+        content: url(../images/iconmin.png);
+        position: relative;
+        top: 5px;
+        margin-right: 5px;
+    }
+
+    .bright h3 {
+        text-align: left;
+        padding: 0 0 10px 1em;
+        color: #373737;
+    }
+
+
+
+
+    /*　　メインここから　　*/
+    .flexslider {
+        width: 100%;
+    }
+
+    .slides img {
+        width: 100%;
+        margin-bottom: 20px;
+        z-index: 1;
+    }
+
+    .banner1 {
+        background-image: url(../images/banner1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        /*background-size: 100% auto;*/
+        height: auto;
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin: 0 auto 20px auto;
+        text-align: center;
+    }
+
+    .bleft img {
+        display: none;
+    }
+
+    .bright p {
+        text-align: left;
+        margin: 0 auto;
+        display: inline-block;
+        color: #373737;
+        padding: 0 0 20px 1em;
+        font-size: 1em;
+        line-height: 1.3em;
+    }
+
+    .bright h3 {
+        padding-top: 20px;
+    }
+
+    .line {
+        background: linear-gradient(transparent 70%, #ffbde1 70%);
+    }
+
+
+    .effect-fade {
+        opacity: 0;
+        transform: translate(0, 200px);
+        transition: all 1000ms;
+    }
+
+
+    .effect-fade.effect-scroll {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+
+    .i1 {
+        background-image: url(../images/illust1.png);
+        background-repeat: no-repeat;
+        background-size: 235px 335px;
+        width: 235px;
+        height: 335px;
+        margin: 0 5px 5px 0;
+    }
+
+    .i2 {
+        background-image: url(../images/illust2.png);
+        background-repeat: no-repeat;
+        background-size: 235px 335px;
+        width: 235px;
+        height: 335px;
+        margin: 0 10px 10px 0;
+    }
+
+    .i3 {
+        background-image: url(../images/illust3.png);
+        background-repeat: no-repeat;
+        background-size: 235px 335px;
+        width: 235px;
+        height: 335px;
+        margin: 0 10px 10px 0;
+    }
+
+    .i4 {
+        background-image: url(../images/illust4.png);
+        background-repeat: no-repeat;
+        background-size: 235px 335px;
+        width: 235px;
+        height: 335px;
+        margin: 0 10px 10px 0;
+    }
+
+    .i5 {
+        background-image: url(../images/illust5.png);
+        background-repeat: no-repeat;
+        background-size: 235px 335px;
+        width: 235px;
+        height: 335px;
+        margin: 0 10px 10px 0;
+    }
+
+    .howto p {
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 40px;
+        width: 170px;
+        font-size: 14px;
+    }
+
+    .howto {
+        width: 100%;
+        /*text-align: center;*/
+        margin: 0 auto;
+    }
+
+    .ibox {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .bflex {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 30px 0;
+        width: 100%;
+    }
+
+    .banner2 img,
+    .banner3 img {
+        margin: 10px auto;
+        width: 85%;
+        display: block;
+        transition: .3s ease-out;
+    }
+
+    .banner2 img:hover,
+    .banner3 img:hover {
+        transition: .3s ease-out;
+        transform: scale(1.02, 1.02);
+    }
+
+
+
+
+    /*　　メインここまで　　*/
+
+
+    .top {
+        position: relative;
+    }
+
+    .top img {
+        width: 40px;
+        opacity: 0.7;
+    }
+
+    .top img:active {
+        opacity: 1;
+    }
+
+    .top {
+        position: fixed;
+        bottom: 50px;
+        right: 20px;
+    }
+
+    footer {
+        background-color: #edae5a;
+        height: 50px;
+    }
+
+    footer small {
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+        padding-top: 18px;
+        color: #fff;
+    }
+
+
+
+
+
+
+    /* micro clearfx */
+    .cf:before,
+    .cf:after {
+        content: "";
+        display: table;
+    }
+
+    .cf:after {
+        clear: both;
+    }
+
+    .cf {
+        zoom: 1;
+    }
+
+    /* For IE 6/7 */
+
+}
+
+@media screen and(max-width:574px) {
+
+
+    .bright h3 {
+        text-align: left;
+        padding: 20px 0 10px 1em;
+        color: #373737;
+
+    }
+
+    .bright img {
+        display: none;
+    }
+
+
+}
+
+
+
+
+/* レスポンシブここまで */

@@ -1,0 +1,485 @@
+.container {
+    text-align: center;
+}
+
+.info_h2 {
+    display: inline-block;
+}
+
+.info {
+    margin-bottom: 80px;
+    background: url(../images/siruetto.png) no-repeat right center;
+}
+
+.info01>h3 {
+    background: url(../images/01.png) no-repeat top left;
+}
+
+.info02>h3 {
+    background: url(../images/02.png) no-repeat top left;
+}
+
+.info03>h3 {
+    background: url(../images/03.png) no-repeat top left;
+}
+
+
+.info h3,
+.info li {
+    color: #583F28;
+}
+
+.info ul {
+    list-style: none;
+}
+
+.info.info03 {
+    background: url(../images/siruetto.png) no-repeat right bottom;
+}
+
+.info h3,
+.info ul li {
+    text-align: left;
+}
+
+.info li {
+    position: relative;
+}
+
+/* flow01 */
+.flow01 li:nth-child(1) {
+    background: url(../images/flow_01_1.png) no-repeat left top;
+}
+
+.flow01 li:nth-child(2) {
+    background: url(../images/flow_01_2.png) no-repeat left top;
+}
+
+.flow01 li:nth-child(3) {
+    background: url(../images/flow_01_3.png) no-repeat left top;
+}
+
+.flow01 li:nth-child(4) {
+    background: url(../images/flow_01_4.png) no-repeat left top;
+}
+
+/* flow02 */
+.flow02 li:nth-child(1) {
+    background: url(../images/flow_02_1.png) no-repeat left top;
+}
+
+.flow02 li:nth-child(2) {
+    background: url(../images/flow_02_2.png) no-repeat left top;
+}
+
+.flow02 li:nth-child(3) {
+    background: url(../images/flow_02_3.png) no-repeat left top;
+}
+
+.flow02 li:nth-child(4) {
+    background: url(../images/flow_02_4.png) no-repeat left top;
+}
+
+/* flow03 */
+.flow03 li:nth-child(1) {
+    background: url(../images/flow_03_1.png) no-repeat left top;
+}
+
+.flow03 li:nth-child(2) {
+    background: url(../images/flow_03_2.png) no-repeat left top;
+}
+
+@media screen and (min-width:768px) {
+
+    body {
+        width: 100%;
+    }
+
+    .navsp {
+        display: none;
+    }
+
+    /*　　ヘッダーここまで　　*/
+
+
+    .info_h2 {
+        color: #373737;
+        font-size: 1.5em;
+        margin: 40px auto;
+        text-align: center;
+    }
+
+    /* h2:before{
+    content: url(../images/iconmin.png);
+    position: relative;
+    top: 5px;
+    margin-right: 5px;
+} */
+
+
+    .bright h3 {
+        text-align: left;
+        padding: 0 0 10px 1em;
+        color: #373737;
+    }
+
+
+
+
+    /*　　メインここから　　*/
+    .container {
+        width: 1100px;
+        margin: 0 auto;
+    }
+
+    .info {
+        width: 70%;
+        text-align: center;
+        margin: 20px auto 40px auto;
+        display: block;
+    }
+
+    .info h3 {
+        font-size: 2.4rem;
+        font-weight: bold;
+        margin-bottom: 1em;
+        letter-spacing: 0.1em;
+        padding: 3px 0 10px 88px;
+    }
+
+    .info li {
+        padding: 50px 0 70px 170px;
+    }
+
+    .info li:nth-child(even) {
+        margin-left: 60px;
+    }
+
+    /*　　メインここまで　　*/
+
+
+
+
+    .top {
+        position: relative;
+    }
+
+    .top img {
+        width: 60px;
+        opacity: 0.7;
+
+    }
+
+    .top img:hover {
+        opacity: 1;
+    }
+
+    .top {
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+    }
+
+    footer {
+        background-color: #edae5a;
+        height: 50px;
+    }
+
+    footer small {
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+        padding-top: 18px;
+        color: #fff;
+    }
+
+
+
+
+
+
+    /* micro clearfx */
+    .cf:before,
+    .cf:after {
+        content: "";
+        display: table;
+    }
+
+    .cf:after {
+        clear: both;
+    }
+
+    .cf {
+        zoom: 1;
+    }
+
+    /* For IE 6/7 */
+
+}
+
+
+
+
+
+
+
+
+
+/* レスポンシブここから */
+
+@media screen and (max-width:767px) {
+
+    body {
+        width: 100%;
+    }
+
+    .navpc {
+        display: none;
+    }
+
+    h1 {
+        margin-top: 10px;
+    }
+
+    header>h1>a>img {
+        width: 27%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    header p {
+        font-size: 1.5em;
+        color: #373737;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    header a {
+        text-decoration: none;
+        color: #373737;
+    }
+
+    /* 電話・メールアイコン */
+    header .header_icon {
+        position: absolute;
+        left: 0;
+        top: 10px;
+    }
+
+    header .header_icon p {
+        float: left;
+        margin: 0 0 0 5px;
+    }
+
+    header .header_icon p a {
+        display: inline-block;
+    }
+
+    header .header_icon p a img {
+        width: 40px;
+    }
+
+    nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0 0 10px 0;
+    }
+
+    nav a {
+        color: #373737;
+        text-decoration: none;
+        text-align: center;
+        padding: 10px 20px;
+        line-height: 1.2em;
+        border-left: none;
+        border-right: none;
+        width: 110px;
+        margin: 10px 0;
+    }
+
+    nav a:hover {
+        background-image: url(../images/icon.png);
+        background-repeat: no-repeat;
+        background-size: 30px 30px;
+        background-position: 55px 0;
+    }
+
+    nav a:last-of-type {
+        border-right: none;
+        height: 20px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 110px;
+    }
+
+    nav li:nth-of-type(4) a {
+        background-image: url(../images/icon.png);
+        background-repeat: no-repeat;
+        background-size: 30px 30px;
+        background-position: 55px 0;
+    }
+
+    .underline p {
+        /* 足跡ライン */
+        margin: 0 auto;
+        margin-top: 30px;
+        clear: both;
+        background: url(../images/asiato_sp.png) repeat-x top center;
+        height: 30px;
+    }
+
+
+    /*　　ヘッダーここまで　　*/
+
+
+    h1 {
+        color: #373737;
+        font-size: 1.2em;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+
+    /* .bright h3{
+        text-align: left;
+        padding: 0 0 10px 1em;
+        color: #373737;
+    } */
+
+
+
+
+    /*　　メインここから　　*/
+    .info {
+        width: 100%;
+        text-align: center;
+        margin: 20px auto 40px auto;
+        display: block;
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .info h3 {
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-bottom: 1em;
+        letter-spacing: 0.1em;
+        padding: 3px 0 10px 50px;
+    }
+
+    .info h3,
+    .info ul li {
+        letter-spacing: 2px;
+        line-height: 20px;
+    }
+
+    .info_h2 img {
+        width: 150px;
+    }
+
+    .info ul li {
+        background-size: 70px !important;
+    }
+
+    .flow01 li:nth-child(1) {
+        background: url(../images/flow_01_1.png) no-repeat left top;
+        background: url("../images/flow_01_1.png") 0 0 / no-repeat;
+    }
+
+    .info li {
+        padding: 20px 0 70px 80px;
+    }
+
+    .info li:nth-child(even) {
+        margin-left: 3%;
+    }
+
+    .info>h3 {
+        background-size: 30px;
+    }
+
+    /*　　メインここまで　　*/
+
+
+    .top {
+        position: relative;
+    }
+
+    .top img {
+        width: 40px;
+        opacity: 0.7;
+    }
+
+    .top img:hover {
+        opacity: 1;
+    }
+
+    .top {
+        position: fixed;
+        bottom: 50px;
+        right: 20px;
+    }
+
+    footer {
+        background-color: #edae5a;
+        height: 50px;
+    }
+
+    footer small {
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+        padding-top: 18px;
+        color: #fff;
+    }
+
+
+
+
+
+
+    /* micro clearfx */
+    .cf:before,
+    .cf:after {
+        content: "";
+        display: table;
+    }
+
+    .cf:after {
+        clear: both;
+    }
+
+    .cf {
+        zoom: 1;
+    }
+
+    /* For IE 6/7 */
+
+}
+
+@media screen and (max-width:574px) {
+
+
+
+    .bright h3 {
+        text-align: left;
+        padding: 10px 0 10px 1em;
+        color: #373737;
+    }
+
+
+
+
+}
+
+
+
+
+/* レスポンシブここまで */

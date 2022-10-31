@@ -1,0 +1,104 @@
+@media screen and (min-width:768px) {
+
+    body {
+        width: 100%;
+    }
+
+    .navsp {
+        display: none;
+    }
+
+    header.navpc {
+        display: flex;
+        justify-content: center;
+        background: url(../images/nav_bg.png) repeat center;
+    }
+
+    header>h1 {
+        width: 260px;
+        margin: 10px 0 10px 10px;
+    }
+
+    header>h1>a {
+        display: block;
+        margin: 0 auto;
+        width: 110px;
+    }
+
+    header>h1>a>img {
+        width: 110px;
+        height: auto;
+        display: inline-block;
+    }
+
+    header a {
+        text-decoration: none;
+        color: #373737;
+    }
+
+    header .header_icon {
+        width: 260px;
+        margin: 10px 10px 10px 0;
+    }
+
+    header .header_icon p {
+        width: 62px;
+        margin: 0 auto;
+    }
+
+    header .header_icon>p:nth-last-of-type(1) {
+        margin-top: 4px;
+    }
+
+    header .header_icon p a img {
+        width: 60px;
+    }
+
+    a {
+        display: inline-block;
+    }
+
+    nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        margin-top: 23px;
+    }
+
+    nav li {
+        width: 150px;
+        text-align: center;
+    }
+
+    nav  {
+        color: #373737;
+        text-decoration: none;
+        text-align: center;
+        padding: 10px 20px;
+        line-height: 1.2em;
+        display: inline-block;
+        align-items: center;
+    }
+
+    nav li:hover {
+        opacity: 0.5;
+    }
+
+    nav  img {
+        width: 80px;
+    }
+
+
+    /*　　ヘッダーここまで　　*/
+
+}
+
+@media screen and (max-width:767px) {
+    header .header_icon {
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        left: 0;
+    }
+}

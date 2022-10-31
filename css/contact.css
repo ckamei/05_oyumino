@@ -1,0 +1,428 @@
+@media screen and (min-width:768px) {
+
+  [v-cloak] {
+    display: none;
+  }  
+  body {
+        width: 100%;
+    }
+
+    .navsp {
+        display: none;
+    }
+
+    /*　　ヘッダーここまで　　*/
+
+
+    .contact h2 {
+        color: #373737;
+        font-size: 1.5em;
+        margin: 40px auto;
+        text-align: center;
+    }
+
+    .contact h2:before {
+        content: url(../images/iconmin.png);
+        position: relative;
+        top: 5px;
+        margin-right: 5px;
+    }
+
+
+    .bright h3 {
+        text-align: left;
+        padding: 0 0 10px 1em;
+        color: #373737;
+    }
+
+
+
+
+    /*　　メインここから　　*/
+    main {
+        width: 100%;
+        text-align: center;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .contact {
+        text-align: left;
+        display: inline-block;
+    }
+
+    .contact p {
+        margin: 20px auto;
+    }
+
+    .fspace {
+        display: inline-block;
+        width: 80%;
+        display: table-cell;
+        vertical-align: top;
+    }
+
+    small {
+      font-size: 0.7rem;
+      color: #8b8b8b;
+    }
+
+    .error {
+      color: #F30100;
+      font-weight: bold;
+      text-align: right;
+    }
+
+    input {
+        width: 350px;
+    }
+
+    textarea {
+        width: 350px;
+        height: 80px;
+    }
+
+    .soushin input {
+        width: 150px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        padding: 5px;
+    }
+
+    /*　　メインここまで　　*/
+
+
+
+
+    .top {
+        position: relative;
+    }
+
+    .top img {
+        width: 60px;
+        opacity: 0.7;
+
+    }
+
+    .top img:hover {
+        opacity: 1;
+    }
+
+    .top {
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+    }
+
+    footer {
+        background-color: #edae5a;
+        height: 50px;
+    }
+
+    footer small {
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+        padding-top: 18px;
+        color: #fff;
+    }
+
+    .red {
+        color: #b11010;
+    }
+
+
+
+
+    /* micro clearfx */
+    .cf:before,
+    .cf:after {
+        content: "";
+        display: table;
+    }
+
+    .cf:after {
+        clear: both;
+    }
+
+    .cf {
+        zoom: 1;
+    }
+
+    /* For IE 6/7 */
+
+}
+
+/*@media screen and (min-width:1276px) {
+.ibox{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 800px;
+}
+.howto{
+    text-align: center;
+    margin: 0 auto;
+}
+}*/
+
+
+
+
+
+
+
+/* レスポンシブここから */
+
+@media screen and (max-width:767px) {
+
+    body {
+        width: 100%;
+    }
+
+    .navpc {
+        display: none;
+    }
+
+    h1 {
+        margin-top: 10px;
+    }
+
+    header>h1>a>img {
+        width: 27%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    header p {
+        font-size: 1.5em;
+        color: #373737;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    header a {
+        text-decoration: none;
+        color: #373737;
+    }
+
+    /* 電話・メールアイコン */
+    header .header_icon {
+        position: absolute;
+        left: 0;
+        top: 10px;
+    }
+
+    header .header_icon p {
+        float: left;
+        margin: 0 0 0 5px;
+    }
+
+    header .header_icon p a {
+        display: inline-block;
+    }
+
+    header .header_icon p a img {
+        width: 40px;
+    }
+
+    nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0 0 10px 0;
+    }
+
+    nav a {
+        color: #373737;
+        text-decoration: none;
+        text-align: center;
+        padding: 10px 20px;
+        line-height: 1.2em;
+        border-left: none;
+        border-right: none;
+        width: 110px;
+        margin: 10px 0;
+    }
+
+    nav a:hover {
+        background-image: url(../images/icon.png);
+        background-repeat: no-repeat;
+        background-size: 30px 30px;
+        background-position: 55px 0;
+    }
+
+    nav a:last-of-type {
+        border-right: none;
+        height: 20px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 110px;
+    }
+
+    nav li:nth-of-type(7) a {
+        background-image: url(../images/icon.png);
+        background-repeat: no-repeat;
+        background-size: 30px 30px;
+        background-position: 55px 0;
+    }
+
+    .underline p {
+        border-bottom: #373737 dotted 1px;
+        display: block;
+        width: 80%;
+        margin: 30px auto;
+        text-align: center;
+    }
+
+
+    /*　　ヘッダーここまで　　*/
+
+
+    h1 {
+        color: #373737;
+        font-size: 1.2em;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+
+    .bright h3 {
+        text-align: left;
+        padding: 0 0 10px 1em;
+        color: #373737;
+    }
+
+
+
+
+    /*　　メインここから　　*/
+
+
+    main {
+        width: 100%;
+        text-align: center;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .contact {
+        text-align: left;
+        display: inline-block;
+        margin: 0 15px;
+    }
+
+    .contact p {
+        margin: 20px auto;
+    }
+
+    .fspace {
+        display: inline-block;
+        width: 80%;
+        display: table-cell;
+        vertical-align: top;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    textarea {
+        width: 90%;
+        height: 80px;
+    }
+
+    .soushin input {
+        width: 150px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        padding: 5px;
+    }
+
+    .red {
+        color: #b11010;
+    }
+
+    /*　　メインここまで　　*/
+
+
+    .top {
+        position: relative;
+    }
+
+    .top img {
+        width: 40px;
+        opacity: 0.7;
+    }
+
+    .top img:hover {
+        opacity: 1;
+    }
+
+    .top {
+        position: fixed;
+        bottom: 50px;
+        right: 20px;
+    }
+
+    footer {
+        background-color: #edae5a;
+        height: 50px;
+    }
+
+    footer small {
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+        padding-top: 18px;
+        color: #fff;
+    }
+
+
+
+
+
+
+    /* micro clearfx */
+    .cf:before,
+    .cf:after {
+        content: "";
+        display: table;
+    }
+
+    .cf:after {
+        clear: both;
+    }
+
+    .cf {
+        zoom: 1;
+    }
+
+    /* For IE 6/7 */
+
+}
+
+@media screen and (max-width:574px) {
+
+
+
+    .bright h3 {
+        text-align: left;
+        padding: 10px 0 10px 1em;
+        color: #373737;
+    }
+
+
+
+
+}
+
+
+
+
+/* レスポンシブここまで */

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="robots" content="noindex,nofollow,noarchive">
+        <title>ペットシッターおゆみ野</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/profile.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/css/drawer.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/js/drawer.min.js"></script>
+
+        <script>
+                $(document).ready(function() {
+                     $('.drawer').drawer();
+                });
+        </script>
+    </head>
+    <body class="drawer drawer--right">
+        <header class="navpc">
+            <h1><a href="index.html"><img src="images/logo.png"></a></h1>
+            <nav>
+                <ul>
+                    <li><a href="job.html"><img src="images/nav_1.png" alt="お世話の内容"></a></li>
+                    <li><a href="price.html"><img src="images/nav_2.png" alt="料金"></a></li>
+                    <li><a href="info.html"><img src="images/nav_3.png" alt="ご利用の流れ"></a></li>
+                    <li><a href="profile.html"><img src="images/nav_4.png" alt="プロフィール"></a></li>
+                    <li><a href="area.html"><img src="images/nav_5.png" alt="営業エリア"></a></li>
+                    <li><a href="contact.html"><img src="images/nav_6.png" alt="お問い合わせ・ご予約"><br></a></li>
+                </ul>
+            </nav>
+                <div class="header_icon">
+                    <p><a href="tel:0432934898"><img src="images/call_circle.png" alt="電話する"></a></p>
+                    <p><a href="mailto:petsitter.oyumino5601@gmail.com"><img src="images/mail_circle.png" alt="メールする"></a></p>
+                </div>
+        </header>
+        <header class="navsp" role="banner">
+            <h1><a href="index.html"><img src="images/logo.png"></a></h1>
+                <div class="header_icon">
+                    <p><a href="tel:0432934898"><img src="images/call_circle.png" alt="電話する"></a></p>
+                    <p><a href="mailto:petsitter.oyumino5601@gmail.com"><img src="images/mail_circle.png" alt="メールする"></a></p>
+                </div>
+                <button type="button" class="drawer-toggle drawer-hamburger">
+                        <span class="sr-only">toggle navigation</span>
+                        <span class="drawer-hamburger-icon"></span>
+                </button>
+                <nav class="drawer-nav" role="navigation">
+                    <ul class="drawer-menu">
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="job.html">お世話の内容</a></li>
+                        <li><a href="price.html">　　料金　　</a></li>
+                        <li><a href="info.html">ご利用の流れ</a></li>
+                        <li><a href="profile.html">プロフィール</a></li>
+                        <li><a href="area.html">&nbsp;営業エリア&nbsp;</a></li>
+                        <li><a href="contact.html">お問い合わせ<br>ご予約</a></li>
+                    </ul>
+                </nav>
+        </header>
+        <main>
+            <div class="underline">
+                <p></p>
+            </div><!--underline end-->
+            <div class="profile">
+                <h2>プロフィール</h2>
+                <div class="procenter">
+                <p class="probig">『ペットシッターおゆみ野』 堀越謙二郎</p>
+                <p><span class="pspace">TEL&FAX：</span>043-293-4898<br>
+                <p><span class="pspace">携帯：</span>080-9398-8847<br>
+                <p><span class="pspace">E-mail：</span>petsitter.oyumino5601@gmail.com<br>
+
+                <p class="probig">&#10004;ペットシッター士（日本ペットシッター協会認定）</p>
+                <p>登録番号：第5601号</p>
+                <p><a href="http://www.pet2211.com/">http://www.pet2211.com/</a></p>
+                <img src="images/pet5601.png">
+                <p class="probig">&#10004;愛玩動物飼養管理士（1級）</p>
+                <p class="probig">&#10004;動物取扱業</p>
+                <p><span class="pspace">事業所の所在地：</span>千葉市緑区おゆみ野南2-31-1</p>
+                <p><span class="pspace">登録年月：</span>令和元年5月2日</p>
+                <p><span class="pspace">有効期限：</span>令和6年5月1日</p>
+                <p><span class="pspace">登録番号：</span>保管（第20277号）</p>
+                <p><span class="pspace">動物取扱責任者：</span>堀越謙二郎</p>
+                <p class="probig">&#10004;ペットシッター士総合補償保険制度に加入しています</p>
+                </div>
+
+
+            </div><!--profile end-->
+
+
+
+
+
+
+
+            <div class="top">
+                    <script>
+                            $(document).ready(function(){
+                                $(window).scroll(function() {
+                                    if($(this).scrollTop() > 100) { // 100pxスクロールしていたら上に戻るボタンを表示
+                                        $(".top").fadeIn();
+                                    } else {
+                                        $(".top").fadeOut();
+                                    }
+                                });
+                                $(".top").click(function() {
+                                    $("body,html").animate({scrollTop:0},800); // 800msかけて上に戻る
+                                });
+                            });
+                    </script>
+                    <a href="#top"><img src="images/top.png"></a>
+            </div><!--top end-->
+        </main>
+        <footer>
+            <small>©oyumino petsitter</small>
+        </footer>
+    </body>
+</html>
